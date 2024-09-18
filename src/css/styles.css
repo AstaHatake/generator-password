@@ -25,7 +25,7 @@ body {
     background-color: #0000007a;
     border: 2px solid #01FFFF;
     border-radius: 12px;
-    padding: 30px;
+    padding: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,20 +37,22 @@ body {
 }
 
 .container-title{
-    font-size: 70px;
+    font-size: 3rem;
+    text-align: center;
     margin-bottom: 10px;
 }
 
 .container-text {
     font-weight: 300;
-    font-size: 20px;
-    width: 400px;
+    font-size: 1.1rem;
+    width: 79%;
     color: #d8d8d8;
+    text-align: center;
+
 }
 
 .container-buttons {
-    width: 100%;
-    
+    width: 20%;
     margin-top: 10px;
     display: flex;
     flex-direction: row;
@@ -63,31 +65,19 @@ body {
 }
 
 .container-button label{
-    font-size: 19px;
+    font-size: 1rem;    
 }
-
-.error {
-    
-}
-
-.error-title {
-    margin-top: 30px;
-    font-size: 20px;
-}
-
-.error-text {
-    font-size: 13px;
-    color: rgb(235, 30, 30);
-}
-
 
 .input-container{
+
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     
+    position: relative;
     width: 50%;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .input-container-column{
@@ -98,16 +88,19 @@ body {
     text-align: center;
     
     width: 50%;
-    margin-top: 30px;
+    margin-top: 13px;
 
 }
 
 .input-container-column label span {
     font-weight: 900;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
-input[type="button"] {
+.input-container-column label {
+    font-size: 1rem;
+}
+#buttonCreate {
     border: 2px solid #01FFFF;
     background: transparent;
     transition-duration: .1s;
@@ -116,12 +109,56 @@ input[type="button"] {
     font-size: 22px;
     margin-right: 20px;
     font-family: "Oswald";
-    width: 50%;
+    width:50%;
     padding: 4px;
     border-radius: 6px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
-input[type="text"] {
+.checkbox {
+    margin-left: 10px;
+    scale: 1.3;
+
+}
+
+.checkbox-label{
+    animation: colorCambio .2s;
+}
+
+
+#password {
+    background: transparent;
+    color: #fafafa;
+    border: 2px solid #01FFFF;
+
+    font-family: "Oswald";
+    font-weight: 900;
+    text-align: center;
+    font-size: 22px;
+
+    width: 100%;
+    padding: 4px;
+    margin-top: 20px;
+    border-radius: 6px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#label-spanLenght{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+
+#rangeLenght {
     background: transparent;
     color: #fafafa;
     border: 2px solid #01FFFF;
@@ -137,23 +174,7 @@ input[type="text"] {
     border-radius: 6px;
 }
 
-input[type="range"] {
-    background: transparent;
-    color: #fafafa;
-    border: 2px solid #01FFFF;
-
-    font-family: "Oswald";
-    font-weight: 900;
-    text-align: center;
-    font-size: 22px;
-
-    margin-right: 20px;
-    width: 70%;
-    padding: 4px;
-    border-radius: 6px;
-}
-
-input[type="button"]:hover {
+#buttonCreate:hover {
     border: 2px solid transparent;
     background: #01ffff93;
     color: #fafafa;
@@ -166,18 +187,12 @@ input[type="button"]:hover {
     border-radius: 6px;
 }
 
-.checkbox {
-    background-color: transparent !important; 
-}
-
-.checkbox:checked{
-    color: #f00 !important;
-}
 
 .input-retry{
     width: 40px;
     background-color: transparent;
     border: 1px solid #01FFFF;
+    transition: .3s;
     opacity: 0;
     display: none;
     justify-content: center;
@@ -185,6 +200,12 @@ input[type="button"]:hover {
     height: 40px;
     font-size: 24px;
     border-radius: 50%;
+}
+
+.input-retry:hover{
+    background-color: #01FFFF93;
+
+    border-color: transparent;
 }
 
 a {
@@ -198,4 +219,69 @@ a {
     font-weight: 300;
     font-size: 15px;
     letter-spacing: 2px;
+}
+
+@media (max-width: 1023px) {
+
+
+    body{
+        background-position-x: 80%;
+    }
+
+    .container {
+        width: 90%;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    .container-title{
+        font-size: 2.6rem;
+        margin-bottom: 10px;
+    }
+    
+
+
+    .container-button label{
+        font-size: 1rem;
+    }
+
+    .input-container-column label span {
+        font-weight: 900;
+        font-size: 1rem;
+    }
+
+    .input-container-column label {
+        font-weight: 900;
+        font-size: 1rem;
+    }
+
+    #password {
+        background: transparent;
+        color: #fafafa;
+        border: 2px solid #01FFFF;
+    
+        font-family: "Oswald";
+        font-weight: 900;
+        text-align: center;
+        font-size: 1rem;
+    
+        margin-right: 20px;
+        width: 100%;
+        padding: 4px;
+        border-radius: 6px;
+    }
+    #buttonCreate {
+        border: 2px solid #01FFFF;
+        background: transparent;
+        transition-duration: .1s;
+        color: #fafafa;
+        font-weight: 900;
+        font-size: 1rem;
+        margin-right: 20px;
+        font-family: "Oswald";
+        width: 56%;
+        padding: 4px;
+        border-radius: 6px;
+    }
+
 }
