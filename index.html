@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Breach</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <script src="https://kit.fontawesome.com/2dc2ccf70e.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="src/images/logo.png">
+</head>
+<body>
+
+
+    <section class="container">
+        <h2 class="container-title">Security Breach</h2>
+        <p class="container-text">El mejor generador de contraseñas del mercado, incluyendo letras, números y signos especiales.</p>
+
+        <h2 class="error error-title">Error</h2>
+        <h5 class="error error-text">Seleccione al menos un input:</h5>
+        <div class="container-buttons">
+            <div class="container-button">
+                <label for="checkbox-letras">Letras</label>
+                <input type="checkbox" class="checkbox" name="" id="checkbox-letras">
+            </div>
+
+            <div class="container-button">
+                <label for="checkbox-numeros">Números</label>
+                <input type="checkbox" class="checkbox" name="" id="checkbox-numeros">
+            </div>
+            
+            <div class="container-button">
+                <label for="checkbox-signos">Signos</label>
+                <input type="checkbox" class="checkbox" name="" id="checkbox-signos">
+            </div>
+            
+        </div>
+
+        <div class="input-container-column">
+            <label for="rangeLenght">
+                <span id="spanLenght">LONGITUD : 0</span> <br> <b>Minimo:</b> 5 <b>Maximo:</b> 20
+            </label>
+            <input type="range" name="" id="rangeLenght" min="0" max="20" value="0">
+        </div>
+
+        <div class="input-container">
+            <input type="button" value="Generador" id="buttonCreate">
+            <div class="input-retry">
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="text" value="ERROR"  id="password">
+        </div>
+
+        
+    </section>
+
+
+    <a href="https://www.freepik.es/vector-gratis/seguridad-cibernetica_8511863.htm#fromView=search&page=1&position=35&uuid=d56061f0-dcdc-41a0-baba-31ac0cfeb063">Imagen de freepik</a>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>
