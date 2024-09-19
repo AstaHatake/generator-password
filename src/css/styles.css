@@ -150,6 +150,10 @@ body {
     cursor: copy;
 }
 
+#password::placeholder{
+    font-weight: 300;
+}
+
 #label-spanLenght{
     margin-top: 8px;
     margin-bottom: 8px;
