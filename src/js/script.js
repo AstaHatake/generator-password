@@ -96,7 +96,7 @@ rangeLenght.addEventListener("mousemove", ()=>{
 });
 
 
-rangeLenght.addEventListener('mouseout', ()=>{
+rangeLenght.addEventListener('touchend', ()=>{
     spanLenght.innerHTML = "LONGITUD : " + rangeLenght.value; 
 })
 
@@ -132,7 +132,7 @@ inputRetry.addEventListener("click", ()=>{
 
 })
 
-inputRetry.addEventListener("mouseleave", ()=>{
+inputRetry.addEventListener("mouse", ()=>{
 
 
 
