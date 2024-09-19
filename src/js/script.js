@@ -117,6 +117,9 @@ buttonCreate.addEventListener("click", ()=>{
 
 
 inputRetry.addEventListener("click", ()=>{
+
+    inputRetry.style = "background-color: #01FFFF93; border-color: transparent;"
+
     if (checkBoxLetras.checked == true || checkBoxNumeros.checked == true  ||checkBoxSignos.checked == true ) {
         password = generatePassword(rangeLenght.value, checkBoxLetras.checked,checkBoxNumeros.checked,checkBoxSignos.checked);
         passwordCreateHTML.value = password;
@@ -126,6 +129,13 @@ inputRetry.addEventListener("click", ()=>{
     else {
         showError();
     }
+
+})
+
+inputRetry.addEventListener("mouseleave", ()=>{
+
+
+
 
 })
 

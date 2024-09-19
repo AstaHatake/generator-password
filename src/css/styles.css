@@ -206,6 +206,11 @@ body {
     border-color: transparent;
 }
 
+.input-retry:active{
+    background-color: transparent;
+    border: 1px solid #01FFFF;
+}
+
 a {
     position: absolute;
     left: 50%;
